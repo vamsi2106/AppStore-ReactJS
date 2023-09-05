@@ -1,149 +1,64 @@
-In this project, let's build an **App Store** by applying the concepts we have learned till now.
+# App Store
 
-### Refer to the image below:
+Welcome to the App Store project! This project is a simple web application built using React.js that emulates an app store interface. You can explore various apps and search for your favorite ones. Let's dive into the features and functionality of this project.
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/app-store-output.gif" alt="app store output" style="max-width:90%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+## Features
 
-### Design Files
+### Tab Navigation
 
-<details>
-<summary>Click to view</summary>
+- The app provides a tab-based navigation system. You can switch between different categories of apps by clicking on the tabs.
+- Initially, the **Social** tab is active, and it displays apps in the **Social** category.
+- You can click on other tabs to switch to their respective categories.
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/app-store-sm-output-v2.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/app-store-lg-output-v2.png)
+### Search Functionality
 
-</details>
+- The App Store allows you to search for apps by name. Simply enter a search term in the search input, and the app list will update to display apps that match the search query.
+- The search is case-insensitive, making it easy to find apps even if you don't remember the exact case of their names.
+- When the search input is empty, the app list displays all the apps in the currently active category.
 
-### Set Up Instructions
+### Responsive Design
 
-<details>
-<summary>Click to view</summary>
+- The project is responsive and adapts to different screen sizes. It provides a seamless user experience on both mobile and desktop devices.
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+## Project Structure
 
-### Completion Instructions
+The project consists of the following main components:
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+- `AppStore`: The main component that manages the tabs and displays the list of apps.
+- `TabItem`: A reusable component for rendering individual tabs.
+- `AppItem`: A reusable component for displaying information about each app.
 
-The app must have the following functionalities
+## Getting Started
 
-- Initially, the **Social** tab should be active and the apps with **Social** as their category should be displayed
-- When a value is provided in the search input
-  - The apps in the active category, that include search input value in their name should be displayed
-  - When another tab is clicked, the apps in the corresponding category, that include search input value in their name should be displayed
-  - The search should be case insensitive
-- When the search input is empty,
-  - All the apps in the active category should be displayed
-  - When another tab is clicked, the apps in the corresponding category should be displayed
-- The `AppStore` component is provided with `tabsList`. It consists of a list of tabItem objects with the following properties in each tabItem object
+To run this project locally, follow these steps:
 
-  |     Key     | Data Type |
-  | :---------: | :-------: |
-  |    tabId    |  String   |
-  | displayText |  String   |
+1. Clone this repository to your local machine.
+2. Navigate to the project directory using the terminal.
+3. Run `npm install` to install the project dependencies.
+4. Run `npm start` to start the development server.
+5. Open your web browser and go to `http://localhost:3000` to view the App Store.
 
-- The `AppStore` component is provided with `appsList`. It consists of a list of app objects with the following properties in each app object
+## Preview
 
-  |   Key    | Data Type |
-  | :------: | :-------: |
-  |  appId   |  Number   |
-  | appName  |  String   |
-  | imageUrl |  String   |
-  | category |  String   |
+You can see a live preview of the App Store project [here](#insert-live-preview-url-here).
 
-</details>
+## Technologies Used
 
-<details>
-<summary>Components Structure</summary>
+- React.js: The project is built using React.js, a popular JavaScript library for building user interfaces.
+- CSS: Styling is done using CSS to create a visually appealing design.
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/app-store-component-structure-breakdown.png" alt="app store component structure breakdown" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+## Contributing
 
-</details>
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Create a pull request to submit your changes for review.
 
-Use these files to complete the implementation:
+## Issues
 
-- `src/components/AppStore/index.js`
-- `src/components/AppStore/index.css`
-- `src/components/TabItem/index.js`
-- `src/components/TabItem/index.css`
-- `src/components/AppItem/index.js`
-- `src/components/AppItem/index.css`
+If you encounter any issues or have suggestions for improvements, please [open an issue](#insert-issue-tracking-url-here) on this repository.
 
-</details>
 
-### Quick Tips
-
-<details>
-<summary>Click to view</summary>
-<br>
-
-- You can use the `cursor` CSS property to specify the mouse cursor to be displayed when pointing over an element
-
-  ```
-    cursor: pointer;
-  ```
-
-  <br/>
-   <img src="https://assets.ccbp.in/frontend/content/react-js/cursor-pointer-img.png" alt="cursor pointer" style="width:100px" />
-
-- You can use the below `outline` CSS property for buttons and input elements to remove the highlighting when the elements are clicked
-
-  ```
-    outline: none;
-  ```
-
-</details>
-
-### Resources
-
-<details>
-<summary>Image URLs</summary>
-
-- [https://assets.ccbp.in/frontend/react-js/app-store/app-store-search-img.png](https://assets.ccbp.in/frontend/react-js/app-store/app-store-search-img.png) alt should be **search icon**
-
-</details>
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #fff1eb; width: 150px; padding: 10px; color: black">Hex: #fff1eb</div>
-<div style="background-color: #ace0f9; width: 150px; padding: 10px; color: black">Hex: #ace0f9</div>
-<div style="background-color: #1e293b; width: 150px; padding: 10px; color: white">Hex: #1e293b</div>
-<div style="background-color: #7b8794; width: 150px; padding: 10px; color: white">Hex: #7b8794</div>
-<div style="background-color: #dfe2e5; width: 150px; padding: 10px; color: black">Hex: #dfe2e5</div>
-<div style="background-color: #2563eb; width: 150px; padding: 10px; color: white">Hex: #2563eb</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Bree Serif
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
