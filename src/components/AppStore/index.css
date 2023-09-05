@@ -1,0 +1,69 @@
+* {
+  font-family: 'Bree Serif';
+}
+
+.app-main {
+  color: #1e293b;
+}
+.App-background {
+  background-image: linear-gradient(#fff1eb, #ace0f9);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+.tabItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.apps-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.App-top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #7b8794;
+  border-radius: 5px;
+  padding: 10px;
+  color: #7b8794;
+}
+input {
+  color: #7b8794;
+  background-color: transparent;
+  border: 0px solid transparent;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+.search-logo {
+  height: 30px;
+}
+@media (min-width: 768px) {
+  .App-background {
+    height: 100vh;
+  }
+  .App-items {
+    width: 60vw;
+  }
+}

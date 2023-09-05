@@ -1,0 +1,18 @@
+.app-card {
+  margin: 10px;
+  padding: 16px;
+  width: 100px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  height: 60px;
+}
+.app-name {
+  font-size: 14px;
+  color: #1e293b;
+}
